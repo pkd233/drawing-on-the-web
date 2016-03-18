@@ -9,14 +9,37 @@
       .circle1 {
         fill: red;
       }
+      
+      @keyframes circle1 {
+          0% {transform: translate(-100px, 0px);}
+          25% {transform: translateX(450px);}
+          50% {transform: translateY(-450px);}
+          75% {transform: translateY(450px);}
+          100% {transform: translateX(-450px);}
+        }
 
       .circle2 {
         fill: green;
       }
+      
+      @keyframes circle2 {
+          0% {transform: translate(-200px, 0px);}
+          25% {transform: translateX(450px);}
+          50% {transform: translateY(450px);}
+          75% {transform: translateY(450px);}
+          100% {transform: translateX(-450px);}
+        }
 
       .circle3 {
         fill: blue;
       }
+      
+      @keyframes circle3 {
+          0% {transform: translate(0px, -200px);}
+          25% {transform: translateX(450px);}
+          50% {transform: translateY(450px);}
+          75% {transform: translateY(450px);}
+          100% {transform: translateX(500px);}
 
       .circle1, .circle2, .circle3 {
         opacity: 0.5;
@@ -26,9 +49,9 @@
   
   <body>
     <svg width="500" height="400">
-      <circle class="circle1" cx="150" cy="200" r="150" />
+      <circle class="circle1" cx="150" cy="200" r="200" />
       <circle class="circle2" cx="250" cy="200" r="150" />
-      <circle class="circle3" cx="350" cy="200" r="150" />
+      <circle class="circle3" cx="350" cy="200" r="100" />
     </svg>
   </body>
 </html>
